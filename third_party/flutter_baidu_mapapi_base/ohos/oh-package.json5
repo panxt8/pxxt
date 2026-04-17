@@ -1,0 +1,11 @@
+{
+  "name": "flutter_baidu_mapapi_base",
+  "version": "1.0.0",
+  "description": "Please describe the basic information.",
+  "main": "index.ets",
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@bdmap/base": "2.0.3"
+  }
+}

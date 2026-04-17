@@ -1,0 +1,47 @@
+# 构建产物
+build/
+out/
+bin/
+target/
+*.class
+
+# IDE 配置文件 (IntelliJ/Android Studio)
+.idea/
+*.iml
+.gradle/
+.kotlin/
+
+# Gradle 包装器
+gradle/wrapper/
+gradlew
+gradlew.bat
+.gradle/
+
+# 资源文件
+src/main/resources/
+src/test/resources/
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.webp
+*.mp4
+*.wav
+*.mp3
+
+# 字体与二进制
+*.ttf
+*.otf
+*.woff
+*.woff2
+*.jar
+*.aar
+*.apk
+
+# 日志与缓存
+*.log
+logs/
+tmp/
+temp/
+.cache/

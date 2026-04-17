@@ -1,0 +1,4 @@
+-keep class com.baidu.** {*;}
+-keep class vi.com.gdi.bgl.** {*;}
+-keep class com.baidu.location.** {*;}
+-dontwarn com.baidu.**

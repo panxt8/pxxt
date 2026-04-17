@@ -32,6 +32,9 @@ ios/ServiceDeviceRepo/
 *.ipr
 *.iws
 .vscode/
+.codexignore
+.codex
+AGENTS.md
 
 old_proj/
 third_party/**/build/

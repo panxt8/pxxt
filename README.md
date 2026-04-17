@@ -1,17 +1,28 @@
-# pxxt
+# PXXT - 某通辅助签到工具
 
-A new Flutter project.
+**PXXT** 是一款基于 Flutter 开发的某通签到工具。支持**关联账号**，实现“一人签到，全部同步”。
 
-## Getting Started
+## 🚀 核心功能git
 
-This project is a starting point for a Flutter application.
+### 📍 位置签到
 
-A few resources to get you started if this is your first Flutter project:
+**直接签到**：使用**三角定位法**探测签到坐标，无需预先知道老师设置的位置。  
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+**地图选点**：支持在地图上任意选点进行签到。
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### 📸 照片签到
+
+解除现场拍照限制，支持从系统相册上传任意图片进行签到。
+
+### 🔍 二维码/签到码/手势签到
+
+支持群签。
+
+## 🛡️反作弊突破
+
+已破解反作弊滑块验证码。
+
+
+## ⚠️ 免责声明
+
+本工具仅用于移动开发技术研究与学习交流，严禁用于任何破坏教育公平、违反学校管理制度的场景。因使用本工具产生的任何后果由使用者自行承担。

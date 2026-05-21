@@ -48,18 +48,16 @@ class BaiduLocationService {
   }
 
   Future<void> _doInitialize() async {
+    if (Platform.isAndroid) {
+      // Android privacy and SDK initialization must run before Flutter plugin
+      // registration, so they live in PxxtApplication.
+      _initialized = true;
+      return;
+    }
+    BMFMapSDK.setAgreePrivacy(true);
     await _plugin
         .setAgreePrivacy(true)
-        .timeout(
-          const Duration(seconds: 4),
-          onTimeout: () {
-            throw TimeoutException('setAgreePrivacy timeout');
-          },
-        );
-    BMFMapSDK.setAgreePrivacy(true);
-    if (Platform.isAndroid) {
-      BMFMapSDK.setCoordType(BMF_COORD_TYPE.BD09LL);
-    }
+        .timeout(const Duration(seconds: 4), onTimeout: () => false);
     _initialized = true;
   }
 

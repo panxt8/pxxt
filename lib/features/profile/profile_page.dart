@@ -9,6 +9,7 @@ import '../../core/network/app_dio.dart';
 import '../../core/network/app_urls.dart';
 import '../../core/storage/app_storage.dart';
 import '../auth/auth_controller.dart';
+import 'settings_page.dart';
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({super.key});
@@ -230,7 +231,22 @@ class _ProfilePageState extends State<ProfilePage> {
     final mainUsername = context.read<AppStorage>().loadCredentials().username;
 
     return Scaffold(
-      appBar: AppBar(title: const Text('我的')),
+      appBar: AppBar(
+        title: const Text('我的'),
+        actions: [
+          IconButton(
+            tooltip: '设置',
+            icon: const Icon(Icons.settings_outlined),
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute<void>(
+                  builder: (context) => const SettingsPage(),
+                ),
+              );
+            },
+          ),
+        ],
+      ),
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [

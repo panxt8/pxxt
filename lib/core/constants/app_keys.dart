@@ -7,4 +7,5 @@ class AppKeys {
   static const homeCoursesCache = 'home_courses_cache';
   static const linkedAccounts = 'linked_accounts';
   static const linkedSessions = 'linked_sessions';
+  static const themeMode = 'theme_mode';
 }

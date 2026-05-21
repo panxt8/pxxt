@@ -68,3 +68,10 @@ android {
 flutter {
     source = "../.."
 }
+
+dependencies {
+    // Compile PxxtApplication against the same official SDKs pulled at runtime
+    // by the Baidu Flutter plugins.
+    compileOnly("com.baidu.lbsyun:BaiduMapSDK_Map:8.0.0")
+    compileOnly("com.baidu.lbsyun:BaiduMapSDK_Location_All:9.6.7")
+}
